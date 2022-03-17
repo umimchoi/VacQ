@@ -4,9 +4,9 @@ exports.getHospitals = async (req, res, next) => {
   let query;
   const reqQuery = { ...req.query };
 
-  const removeFileds = ["select", "sort", "page", "limit"];
+  const removeFields = ["select", "sort", "page", "limit"];
 
-  removeFileds.forEach((param) => delete reqQuery[param]);
+  removeFields.forEach((param) => delete reqQuery[param]);
 
   console.log(reqQuery);
 
