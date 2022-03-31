@@ -6,7 +6,8 @@ exports.getVacCenters = (req, res, next) => {
     if (err) {
       res.status(500).send({
         message:
-          err.message || "Some error occured while retrieving Vaccine Centers.",
+          err.message ||
+          "Some error occurred while retrieving Vaccine Centers.",
       });
     } else res.send(data);
   });
